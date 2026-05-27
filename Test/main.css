@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Sancreek');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
+
+
+
 h1 {
-  color:deepskyblue;
+  font-size: 75px;
+  font-family: "Sancreek";
+}
+
+h2 {
+  font-size: 45px;
+  font-family: "Special Elite";
 }
 
 p {
-  color:dodgerblue;
+  font-size: 27px;
+  font-family: 'Jim Nightshade';
 }
 
-.cute {
-    width:auto;
+.loading {
+    width: 500px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
 }
