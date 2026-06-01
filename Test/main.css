@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sancreek');
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 @import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
-
+@import url('https://fonts.googleapis.com/css?family=Rubik+Glitch');
 
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 35px;
   font-family: "Special Elite";
 }
 
@@ -19,8 +19,31 @@ h2 {
   font-family: 'Jim Nightshade';
 }
 
+.mini:hover {
+  font-size: 0;
+}
+
+span {
+  font-size: 31px;
+  font-family: 'Jim Nightshade';
+}
+
+span:hover {
+  font-family: "Rubik Glitch";
+  color: maroon;
+  content: "RUN. Survive. Hide. Make it out alive.";
+  font-size: 40px;
+}
+
 .loading {
-    width: 500px;
-    padding: 30px 25px 30px 25px;
+    width: auto;
+    padding: 90px 105px 90px 105px;
     text-align: center;
+}
+
+.loading:hover {
+    width: auto;
+    padding: 90px 105px 90px 105px;
+    text-align: center;
+    content: url("DemonologyWatcherIcon.jpg");
 }
