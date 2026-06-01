@@ -14,26 +14,35 @@ h2 {
   font-family: "Special Elite";
 }
 
-.mini {
+.default {
   font-size: 31px;
   font-family: 'Jim Nightshade';
 }
 
-.mini:hover {
+.text-container .hover {
+  display: none;
+}
+
+.text-container:hover .default {
+  display: none;
+}
+
+.text-container:hover .hover {
+  display: inline-block;
   font-family: "Rubik Glitch";
   color: maroon;
-  content: ("RUN. Survive. Hide. Make it out alive.");
+  content:("RUN. Survive. Hide. Make it out alive.");
   font-size: 32px;
 }
 
 .loading {
-    width: auto;
+    width: 1000px;
     padding: 90px 105px 90px 105px;
     text-align: center;
 }
 
 .loading:hover {
-    width: auto;
+    width: 1200px;
     padding: 90px 105px 90px 105px;
     text-align: center;
     content: url("DemonologyWatcherIcon.jpg");
