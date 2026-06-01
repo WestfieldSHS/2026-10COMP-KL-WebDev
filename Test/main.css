@@ -22,7 +22,7 @@ h2 {
 .mini:hover {
   font-family: "Rubik Glitch";
   color: maroon;
-  content: "RUN. Survive. Hide. Make it out alive.";
+  content: ("RUN. Survive. Hide. Make it out alive.");
   font-size: 32px;
 }
 
