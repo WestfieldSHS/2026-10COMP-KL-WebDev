@@ -20,19 +20,10 @@ h2 {
 }
 
 .mini:hover {
-  font-size: 0;
-}
-
-span {
-  font-size: 31px;
-  font-family: 'Jim Nightshade';
-}
-
-span:hover {
   font-family: "Rubik Glitch";
   color: maroon;
   content: "RUN. Survive. Hide. Make it out alive.";
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .loading {
