@@ -3,14 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Glitch');
 
-html {
- color:blanchedalmond;
-}
-
-html:hover {
-  color: burlywood;
-}
-
 h1 {
   font-size: 65px;
   font-family: "Sancreek";
