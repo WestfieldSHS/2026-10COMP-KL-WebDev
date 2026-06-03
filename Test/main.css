@@ -3,10 +3,21 @@
 @import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Glitch');
 
+html {
+ color:blanchedalmond;
+}
+
+html:hover {
+  color: burlywood;
+}
 
 h1 {
   font-size: 65px;
   font-family: "Sancreek";
+}
+
+body {
+display: inline-block;
 }
 
 h2 {
@@ -36,7 +47,7 @@ h2 {
 }
 
 .loading {
-    width: 1000px;
+    width: 1100px;
     padding: 105px;
     display: block;
     margin-left: auto;
