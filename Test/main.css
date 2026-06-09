@@ -25,10 +25,12 @@ h2 {
 
 .text-container .hover {
   display: none;
+  width: 65%;
 }
 
 .text-container:hover .default {
   display: none;
+  width: 65%;
 }
 
 .text-container:hover .hover {
@@ -40,8 +42,8 @@ h2 {
 }
 
 .loading {
-    width: 80%;
-    padding: 105px;
+    width: 65%;
+    padding: 85px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -49,8 +51,8 @@ h2 {
 }
 
 .loading:hover {
-    width: 80%;
-    padding: 105px;
+    width: 65%;
+    padding: 85px;
     display: block;
     margin-left: auto;
     margin-right: auto;
