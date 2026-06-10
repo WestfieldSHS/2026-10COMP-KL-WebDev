@@ -9,10 +9,6 @@ h1 {
   text-align: center;
 }
 
-body {
-  display: inline-block;
-}
-
 h2 {
   font-size: 31px;
   font-family: "Special Elite";
@@ -32,7 +28,6 @@ h2 {
 }
 
 .text-container:hover .hover {
-  display: inline-block;
   font-family: "Rubik Glitch";
   color: maroon;
   content:("RUN. Survive. Hide. Make it out alive.");
@@ -56,22 +51,4 @@ h2 {
     margin-right: auto;
     text-align: center;
     content: url("DemonologyWatcherIcon.jpg");
-}
-
-.container {
-  display: flex;
-  gap: 20px;
-}
-
-.column-left, .column-right {
-  flex: 1;
-  padding: 15px;
-}
-
-.column-left {
-  width: 70%;
-}
-
-.column-right {
-width: 30%;
 }
