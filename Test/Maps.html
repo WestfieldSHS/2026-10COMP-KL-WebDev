@@ -1,7 +1,52 @@
-<html>
     <link href="main.css" rel="stylesheet">
-    <a href="index.html" class="subpages">Index</a>
-    <a href="Ghost.Info.html" class="subpages">Ghost Info</a>
-    <a href="Modifiers.html" class="subpages">Modifiers Rundown</a>
-    <a href="Evidences.html" class="subpages">Ghost Evidences</a>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height:2000px;
+}
+
+.left {
+  width: 70%;
+  
+}
+
+.right {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left" style="background-color:rgb(204, 179, 149);"></div>
+
+  <div class="column right" style="background-color:rgba(197, 163, 119, 0.904);">
+    <body>
+        <h3>Content List</h3>
+        <h4><a href="Ghost.Info.html" class="subpages">Ghost Info</a></h4>
+        <h5><a href="Maps.html" class="subpages">Maps Rundown</a></h5>
+        <h6><a href="Modifiers.html" class="subpages">Modifiers Rundown</a></h6>
+        <h7><a href="Evidences.html" class="subpages">Ghost Evidences</a></h7>
+    </body>
+  </div>
+</div>
+
+</body>
 </html>
