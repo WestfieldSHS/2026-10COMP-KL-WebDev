@@ -19,7 +19,7 @@ h2 {
 }
 
 .default {
-  font-size: 39px;
+  font-size: 30px;
   font-family: 'Jim Nightshade';
 }
 
@@ -43,7 +43,7 @@ h2 {
 
 .loading {
     width: 65%;
-    padding: 85px;
+    padding: 65px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -52,7 +52,7 @@ h2 {
 
 .loading:hover {
     width: 65%;
-    padding: 85px;
+    padding: 65px;
     display: block;
     margin-left: auto;
     margin-right: auto;
