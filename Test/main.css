@@ -57,3 +57,21 @@ h2 {
     text-align: center;
     content: url("DemonologyWatcherIcon.jpg");
 }
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.column-left, .column-right {
+  flex: 1;
+  padding: 15px;
+}
+
+.column-left {
+  width: 70%;
+}
+
+.column-right {
+width: 30%;
+}
