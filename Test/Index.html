@@ -1,26 +1,62 @@
     <link href="main.css" rel="stylesheet">
 
-<div class="container">
-<div class="column-left">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
 <body>
+
 <h1>Demonology Hunt!</h1>
-<img class="loading" src="Demonology-Title.jpg" alt="Demonology Title Picture.">
-<h2>Welcome to the Demonology Run-down.</h2>
-<div class="Text-container">
-<p class="default">This is where you will learn all about the game! From learning how to even play the game to breaking down key features of the game.</p>
-<span class="hover">RUN. Survive. Hide. Make it out alive.</span>
-</p>
-</body>
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <body>
+    <img class="loading" src="Demonology-Title.jpg" alt="Demonology Title Picture.">
+    <h2>Welcome to the Demonology Run-down.</h2>
+        <div class="Text-container">
+        <p class="default">This is where you will learn all about the game! From learning how to even play the game to breaking down key features of the game.</p>
+        <span class="hover">RUN. Survive. Hide. Make it out alive.</span>
+    </p>
+    </body>
+  </div>
+
+  <div class="column right" style="background-color:#bbb;">
+    <body>
+        <h3>Content List</h3>
+        <h4><a href="Ghost.Info.html" class="subpages">Ghost Info</a></h4>
+        <h5><a href="Maps.html" class="subpages">Maps Rundown</a></h5>
+        <h6><a href="Modifiers.html" class="subpages">Modifiers Rundown</a></h6>
+        <h7><a href="Evidences.html" class="subpages">Ghost Evidences</a></h7>
+    </body>
+  </div>
 </div>
 
-  <div class="column-right">
-<body>
-<h3>Content List</h3>
-    <h4><a href="Ghost.Info.html" class="subpages">Ghost Info</a></h4>
-    <h5><a href="Maps.html" class="subpages">Maps Rundown</a></h5>
-    <h6><a href="Modifiers.html" class="subpages">Modifiers Rundown</a></h6>
-    <h7><a href="Evidences.html" class="subpages">Ghost Evidences</a></h7>
 </body>
-</div>
-</div>
-
+</html>
