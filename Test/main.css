@@ -25,15 +25,14 @@ h2 {
 
 .text-container .hover {
   display: none;
-  width: 65%;
 }
 
 .text-container:hover .default {
   display: none;
-  width: 65%;
 }
 
 .text-container:hover .hover {
+  display: inline-block;
   font-family: "Rubik Glitch";
   color: maroon;
   content:("RUN. Survive. Hide. Make it out alive.");
