@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Glitch');
 @import url('https://fonts.googleapis.com/css?family=Jaro');
+@import url('https://fonts.googleapis.com/css?family=Climate Crisis');
+
 
 h1 {
   font-size: 65px;
@@ -36,8 +38,8 @@ h2 {
 }
 
 .loading {
-    width: 65%;
-    padding: 65px;
+    width: auto;
+    padding: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -45,8 +47,8 @@ h2 {
 }
 
 .loading:hover {
-    width: 65%;
-    padding: 65px;
+    width: auto;
+    padding: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -58,6 +60,7 @@ h2 {
   font-size: 30px;
   font-family: "Jaro";
   text-decoration: none;
+  color: black;
 }
 
 .content:hover {
@@ -72,4 +75,5 @@ h8 {
   font-size: 45px;
   font-style: italic;
   text-decoration: underline;
+  font-family: "Climate Crisis";
 }
