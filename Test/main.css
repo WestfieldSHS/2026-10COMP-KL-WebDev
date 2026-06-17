@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 @import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Glitch');
+@import url('https://fonts.googleapis.com/css?family=Jaro');
 
 h1 {
   font-size: 65px;
@@ -51,4 +52,24 @@ h2 {
     margin-right: auto;
     text-align: center;
     content: url("DemonologyWatcherIcon.jpg");
+}
+
+.content {
+  font-size: 30px;
+  font-family: "Jaro";
+  text-decoration: none;
+}
+
+.content:hover {
+  font-size: 30px;
+  font-family: "Jaro";
+  text-decoration: none;
+  color: rgba(43, 41, 41, 0);
+
+}
+
+h8 {
+  font-size: 45px;
+  font-style: italic;
+  text-decoration: underline;
 }
