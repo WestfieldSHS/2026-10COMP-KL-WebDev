@@ -1,4 +1,4 @@
-    <link href="main.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet">
 
 <html>
 <head>
@@ -11,19 +11,15 @@
 /* Create two unequal columns that floats next to each other */
 .column {
   float: left;
+  width: 22%;
   padding: 10px;
-  width: 50%;
-  height:1000px;
+  height: 950px; /* Should be removed. Only for demonstration */
 }
 
 .left {
   width: 78%;
-  
 }
 
-.right {
-  width: 22%;
-}
 
 /* Clear floats after the columns */
 .row:after {
@@ -36,21 +32,20 @@
 <body>
 
 <div class="row">
-  <div class="cleft" style="background-color:rgb(204, 179, 149);"></div>
+  <div class="column left" style="background-color:rgb(196, 172, 127);">
+    <p></p>
 
-  <div class="cright" style="background-color:rgba(197, 163, 119, 0.904);">
-    <body>
-        <h8>Content List</h8>
-        <div class="Content">
-        <h3><a href="Home.html" class="subpages">Index Page</a></h3>
-        <h4><a href="Ghost.Info.html" class="subpages">Ghost Info</a></h4>
-        <h5><a href="Maps.html" class="subpages">Maps Rundown</a></h5>
-        <h6><a href="Modifiers.html" class="subpages">Modifiers Rundown</a></h6>
-        <h7><a href="Evidences.html" class="subpages">Ghost Evidences</a></h7>
-        </div>
-    </body>
   </div>
+  <div class="column" style="background-color:rgb(187, 162, 118);">
+    <h8>Content List</h8>
+        <h3><a href="Home.html" class="subpages"> Home Page </a></h3>
+        <h4><a href="Ghost.Info.html" class="subpages"> Ghost Info </a></h4>
+        <h5><a href="Maps.html" class="subpages meow"> Maps Rundown </a></h5>
+        <h6><a href="Modifiers.html" class="subpages"> Modifiers Rundown </a></h6>
+        <h7><a href="Evidences.html" class="subpages"> Ghost Evidences </a></h7>
+        </div>
 </div>
+
 
 </body>
 </html>

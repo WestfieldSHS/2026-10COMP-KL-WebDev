@@ -1,4 +1,4 @@
-    <link href="main.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet">
 
 <html>
 <head>
@@ -9,20 +9,15 @@
 }
 
 /* Create two unequal columns that floats next to each other */
-.column {
+.columnM {
   float: left;
+  width: 22%;
   padding: 10px;
-  width: 50%;
-  height:1000px;
+  height: 950px; /* Should be removed. Only for demonstration */
 }
 
 .left {
   width: 78%;
-  
-}
-
-.right {
-  width: 22%;
 }
 
 /* Clear floats after the columns */
@@ -31,25 +26,336 @@
   display: table;
   clear: both;
 }
+
 </style>
 </head>
 <body>
 
 <div class="row">
-  <div class="cleft" style="background-color:rgb(204, 179, 149);"></div>
+  <div class="column left" style="background-color:rgb(196, 172, 127);">
 
-  <div class="cright" style="background-color:rgba(197, 163, 119, 0.904);">
-    <body>
-        <h8>Content List</h8>
-        <div class="Content">
-        <h3><a href="Home.html" class="subpages">Index Page</a></h3>
-        <h4><a href="Ghost.Info.html" class="subpages">Ghost Info</a></h4>
-        <h5><a href="Maps.html" class="subpages">Maps Rundown</a></h5>
-        <h6><a href="Modifiers.html" class="subpages">Modifiers Rundown</a></h6>
-        <h7><a href="Evidences.html" class="subpages">Ghost Evidences</a></h7>
-        </div>
-    </body>
+<div style="text-align:center">
+  <h2>Ghost Information!</h2>
+  <p>Click on the boxes below:</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:green;">
+    Aswang
   </div>
+  <div class="column" onclick="openTab('b2');" style="background:blue;">
+    Banshee
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:red;">
+    Demon
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Aswang</h2>
+  <p>Aswangs have historically only been reported in the Philippines and surrounding areas but have been recently been increasingly common on a global scale. They are vampiric creatures empowered by death with seemingly no desire outside of attacking people.</p>
+<p>Aswang's speed increases every time they kil. Walking through salt slows them.</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Banshee</h2>
+  <p>Banshees are characterized as harbingers of death and demise. they most commonly manifest as wailing and mournful spirits, occupying spaces where misfortune is bound to occur. Be less cautious of them, and more cautious of what they may be warning you of.</p>
+<p>Banshees are more likely to break glass. they might use distinct wail when hunting.</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Demon</h2>
+  <p>Use extreme caution when interacting with a demon! They are extremeply hostile and dangerous!</p>
+  <p>Demons hunt frequently, crosses are more effective on them.</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b4');" style="background:pink;">
+    Dullahan
+  </div>
+  <div class="column" onclick="openTab('b5');" style="background:yellow;">
+    Dybbuk
+  </div>
+  <div class="column" onclick="openTab('b6');" style="background:purple;">
+    Entity
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b4" class="containerTab" style="display:none;background:pink">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Dullahan</h2>
+  <p>Dullahans, more commonly known as Headless Horseman, are legendary characters of folklore, often traveling long distances on their horses, they can be very dangerous when they decide to stick around.</p>
+<p>Dullahans appear headless in photos. They move faster the longer they see their target.</p>
+</div>
+
+<div id="b5" class="containerTab" style="display:none;background:yellow">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Dybbuk</h2>
+  <p>Dybbuk's are malicious ghosts that have a strong bond with posession and pursue a specific goal or ideal before parting from the mortal plane. they have the unique ability of interacting with corpses.</p>
+<p>Dybbuk's can throw corpses. They are stunned when a Music Box is first played.</p>
+</div>
+
+<div id="b6" class="containerTab" style="display:none;background:purple">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Entity</h2>
+  <p>the entity is a powerful force that transcends typical hauntings. while it's control over the environment is limited, it has been observed to teleport, granting it heavy influence.</p>
+<p>The entity can teleport from one location to another. It is unlikely to throw objects.</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b7');" style="background:green;">
+    Ghoul
+  </div>
+  <div class="column" onclick="openTab('b8');" style="background:blue;">
+    Keres
+  </div>
+  <div class="column" onclick="openTab('b9');" style="background:red;">
+    Leviathan
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b7" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+   <h2>Ghoul</h2>
+  <p>Ghouls are regarded as troublemaking ghosts, more focused on "playing" than harming. They often engage in behavior to frighten people in their vicinity, but are quick to anger. Exercise caution when in the presence of a Ghoul.</p>
+  <p>Ghouls may become enraged if they hear talking. They can't disable electronics.</p>
+</div>
+
+<div id="b8" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+ <h2>Keres</h2>
+  <p>Keres are best described as angels of death. They wander aiming to feed on the souls of the deceased. They prey on the weakest targets that they are able to sense. It is best to remain mindful of your energy levels and keep them high when dealing with a Keres to avoid being targeted.</p>
+  <p>Keres' speed decreases with each kill. They target hunters with the lowest energy.</p>
+</div>
+
+<div id="b9" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Leviathan</h2>
+  <p>Leviathans are physical manifestations of chaos and destruction, and are as dangerous and unpredictable as you'd expect. They have a particular affinity for throwing objects.</p>
+  <p>Leviathans can throw multiple objects, and can disable lights passively.</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b10');" style="background:pink;">
+    Nightmare
+  </div>
+  <div class="column" onclick="openTab('b11');" style="background:yellow;">
+    Oni
+  </div>
+  <div class="column" onclick="openTab('b12');" style="background:purple;">
+	Phantom
+</div>
+</div>
+<!-- Full-width columns: (hidden by default) -->
+<div id="b10" class="containerTab" style="display:none;background:pink">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+   <h2>Nightmare</h2>
+  <p>Nightmares, as the name suggests, commonly manifest themselves as bad dreams and are usually harmless. However, particularly powerful nightmares can manifest themselves in the physical world, exhibiting much of the same behavior expected from an average ghost.</p>
+  <p>Nightmares can cause hallucinations. They hunt more often in the dark.</p>
+</div>
+<div id="b11" class="containerTab" style="display:none;background:yellow">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Oni</h2>
+  <p>Onis are a class of ghost believed to originate in Japan, but sightings have been reported all across the globe. They are known for manifesting often and having a terrifying physical appearance.</p>
+  <p>Onis sprint during hunts. They manifest more commonly than other ghosts.</p>
+</div>
+
+<div id="b12" class="containerTab" style="display:none;background:purple">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Phantom</h2>
+  <p>Phantoms are ethereal apparitions that manifest less frequently than similar ghosts. They are misattributed as "shy" and "timid", but can certainly be aggressive. They are commonly associated with deep emotional attachments to specific locations.</p>
+  <p>Phantoms reduce sanity much quicker when looked at. Taking a photo of them will make them temporarily disappear.</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b13');" style="background:green;">
+    Ravenger
+  </div>
+  <div class="column" onclick="openTab('b14');" style="background:blue;">
+    Revenant
+  </div>
+  <div class="column" onclick="openTab('b15');" style="background:red;">
+    Shadow
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b13" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Ravenger</h2>
+  <p>A Ravager is a violent manifestation that uses the environment as a weapon. ravagers announce themselves through destruction. Overturned furniture, thrown objects, and sudden bursts of chaotic movement.</p>
+  <p></p>
+</div>
+
+<div id="b14" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Revenant</h2>
+  <p>Revenants are highly vengeful, often drawing their strength not from fear. but from anger. they are relentless, hunting anyone they have the opportunity to. They are unstoppable when enraged.</p>
+  <p>Revenants have a low hunt cooldown. they will rest if they've killed someone.</p>
+</div>
+
+<div id="b15" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Shadow</h2>
+  <p>shadows are barely perceptible apparitions that rarely interact with their environment, preferring to reside calmly in the dark. They are shy and tend to avoid people. though are known to be defensive of their favorite room.</p>
+  <p>Shadows do not alter the temperature much. They are less active in well-lit rooms.</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b16');" style="background:pink;">
+    Siren
+  </div>
+  <div class="column" onclick="openTab('b17');" style="background:yellow;">
+    Skinwalker
+  </div>
+  <div class="column" onclick="openTab('b18');" style="background:purple;">
+    Specter
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b16" class="containerTab" style="display:none;background:pink">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Siren</h2>
+  <p>Siren's are  most known for their distinct singing voice which they commonly use to lure sailors to their demise, though they have also been seen roaming far away from the ocean. Keep an ear out for their distinct singing voice that you can hear through the spirit box.</p>
+  <p>Sirens slow people they see while hunting. They always respond in a female voice.</p>
+</div>
+
+<div id="b17" class="containerTab" style="display:none;background:yellow">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Skinwalker</h2>
+  <p>Skinwalkers are elusive ghosts with the unique ability to mimic the abilities of other ghost types. They are more frequent roamers. spending more time outside of their favorite room. Identifying Skinwalkers requires extreme precision.</p>
+  <p>Skinwalkers can fake ghost orb evidence. They can mimic other ghosts' abilities.</p>
+</div>
+
+<div id="b18" class="containerTab" style="display:none;background:purple">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Specter</h2>
+  <p>Specters, are strongly bound to their favorite room. When in the same room as one, many say they feel an ominous sense of unease. Specters are known for their profound control over the environment.</p>
+  <p>Specters are more likely to throw items. They do not roam except while hunting.</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b19');" style="background:green;">
+    Spirit
+  </div>
+  <div class="column" onclick="openTab('b20');" style="background:blue;">
+    Umbra
+  </div>
+  <div class="column" onclick="openTab('b21');" style="background:red;">
+    Vesper
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b19" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Spirit</h2>
+  <p>Spirits are a manifestation of the souls of the deceased. They are able to project in the physical world and have been observed to manipulate electronic frequencies. They are often eager to communicate with the living and are generally considered harmless.</p>
+  <p>Spirits have no documented strengths. They can alter the flame color of candles.</p>
+</div>
+
+<div id="b20" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Umbra</h2>
+  <p>The namesake of the Umbra Board, Umbras are elusive, shadowy apparitions born from fear. Instead of planting their feet, they tip toe, making no sound as they walk. Their presence is often said to be deeply unsettling.</p>
+  <p>Umbras do not make footstep sounds. They move slower in lit rooms.</p>
+</div>
+
+<div id="b21" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Vesper</h2>
+  <p>Vespers are the malinant lingering souls of creatures living in complete darkness. they've evolved to rely solely on their auditory senses, a sort of echolocation, making them adept hunters despite lacking ocular vision of any kind.</p>
+  <p>Vespers rely solely on sound to hunt. They can track through walls.</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b22');" style="background:pink;">
+    Vex
+  </div>
+  <div class="column" onclick="openTab('b23');" style="background:yellow;">
+    Wendigo
+  </div>
+  <div class="column" onclick="openTab('b24');" style="background:purple;">
+    Wisp
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b22" class="containerTab" style="display:none;background:pink">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Vex</h2>
+  <p>A vex. while not a ghost in the traditional sense, is a presence that acts as the physical embodiment of anger and displeasure. They do not occupy the physical space in the same way we'd expect from other ghosts.</p>
+  <p>Vex's are invisible on LIDAR Scans. They can walk through walls.</p>
+</div>
+
+<div id="b23" class="containerTab" style="display:none;background:yellow">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Wendigo</h2>
+  <p>Wendigos are horribly malformed creatures, less ghost and more monster caricature. Wendigos are incredibly afraid of fire, making candles and lanterns good tools for fending them off - still, it is best to be cautious.</p>
+  <p>Wendigos won't start a hunt near a lit flame. They move faster as average energy lowers.</p>
+</div>
+
+<div id="b24" class="containerTab" style="display:none;background:purple">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>The wisp</h2>
+  <p>A will-o-the-wisp, commonly known as The Wisp or just "Wisp" is a spirit that typically haunts swamps, but have recently been observed invading homes and other buildings. They have a particular affinity for fire. </p>
+  <p>Wisps can light candles. They can only start a hunt in their favorite room.</p>
+</div>
+
+<div class="row">
+  <div class="column" onclick="openTab('b25');" style="background:pink;">
+    Wraith
+  </div>
+</div>
+<!-- Full-width columns: (hidden by default) -->
+<div id="b25" class="containerTab" style="display:none;background:pink">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Wraith</h2>
+  <p>Wraiths are malevolent shadowy apparitions, noted for their profound aggression. They are known to inflict an impending sense of doom on people around them. Be wary when interacting with a wraith in any capacity.</p>
+  <p>Wraiths quickly deplete energy from hunters. They refuse to disturb lines of salt.</p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
+</html> 
+
+
+
+    
+  </div>
+  <div class="columnM" style="background-color:rgb(187, 162, 118);">
+    <h8>Content List</h8>
+        <h3><a href="Home.html" class="subpages"> Home Page </a></h3>
+        <h4><a href="Ghost.Info.html" class="subpages meow"> Ghost Info </a></h4>
+        <h5><a href="Maps.html" class="subpages"> Maps Rundown </a></h5>
+        <h6><a href="Modifiers.html" class="subpages"> Modifiers Rundown </a></h6>
+        <h7><a href="Evidences.html" class="subpages"> Ghost Evidences </a></h7>
+        </div>
 </div>
 
 </body>

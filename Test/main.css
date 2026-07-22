@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 @import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Glitch');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+@import url('https://fonts.googleapis.com/css?family=Climate+Crisis');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
 @import url('https://fonts.googleapis.com/css?family=Jaro');
-@import url('https://fonts.googleapis.com/css?family=Climate Crisis');
 
-
+_
 h1 {
   font-size: 65px;
   font-family: "Sancreek";
@@ -15,6 +17,7 @@ h1 {
 h2 {
   font-size: 31px;
   font-family: "Special Elite";
+  text-align: center;
 }
 
 .default {
@@ -32,7 +35,7 @@ h2 {
 
 .text-container:hover .hover {
   font-family: "Rubik Glitch";
-  color: maroon;
+  color: rgb(104, 1, 1);
   content:("RUN. Survive. Hide. Make it out alive.");
   font-size: 28px;
 }
@@ -72,8 +75,64 @@ h2 {
 }
 
 h8 {
-  font-size: 45px;
+  font-size: 35px;
   font-style: italic;
   text-decoration: underline;
   font-family: "Climate Crisis";
+  color: rgb(90, 75, 55);
+
+}
+
+.meow {
+  background-color: rgb(170, 145, 99);
+  font-size: 25px;
+  font-family: "Shadows Into Light Two";
+  font-style: italic;
+  color: rgb(87, 69, 47);
+}
+
+.subpages {
+  font-size: 33px;
+  padding: 5px;
+  text-align: center;
+  font-family: "Caveat Brush";
+  text-decoration:wavy;
+  font-weight: bold;
+  color: rgb(109, 89, 62);
+}
+
+.subpages:hover {
+ font-size: 39px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  margin: 55px;
+  padding: 20px;
+  color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  padding: 20px;
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
 }
