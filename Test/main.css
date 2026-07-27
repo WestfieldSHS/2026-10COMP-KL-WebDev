@@ -136,3 +136,22 @@ h8 {
   font-size: 35px;
   cursor: pointer;
 }
+
+/* Create two unequal columns that floats next to each other */
+.columnM {
+  float: left;
+  width: 22%;
+  padding: 10px;
+  height: 1950px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 76%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
