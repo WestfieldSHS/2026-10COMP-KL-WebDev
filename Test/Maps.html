@@ -1,51 +1,227 @@
-<link href="main.css" rel="stylesheet">
-
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  width: 22%;
-  padding: 10px;
-  height: 950px; /* Should be removed. Only for demonstration */
-}
-
-.left {
-  width: 78%;
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonology - Investigation Sites</title>
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="row">
-  <div class="column left" style="background-color:rgb(196, 172, 127);">
-    <p></p>
 
+<div class="whole">
+
+  <div class="LeftSide" style="background-color:rgb(196, 172, 127);">
+    <h1>Investigation Sites</h1>
+    <h2>Analyze the layouts. Memorize the extraction routes.</h2>
+   
+    <h3 class="tier-heading">Residential Areas (Small Sites)</h3>
+    <div class="maps-grid">
+
+               <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-Fenway-Drive.jpg" alt="Fenway Drive" class="map-img">
+                <span class="danger-level level-low">Low Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>Fenway Drive</h3>
+                <p class="map-desc">The official training grounds. Features ten basic suburban rooms including a garage housing the primary fuse box. Great for beginner hunts.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> Small</span>
+                    <span><strong>Rooms:</strong> 10</span>
+                    <span><strong>Floors:</strong> 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-JuniperRoad.jpg" alt="Juniper Road" class="map-img">
+                <span class="danger-level level-low">Low Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>Juniper Road</h3>
+                <p class="map-desc">One story house featuring 8 basic suburban rooms including a pantry housing the primary fuse box. Great for solo warmup hunts.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> Small</span>
+                    <span><strong>Rooms:</strong> 8</span>
+                    <span><strong>Floors:</strong> 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-LincolnStreet.jpg" alt="Lincoln Street" class="map-img">
+                <span class="danger-level level-mid">Medium Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>Lincoln Street</h3>
+                <p class="map-desc">A haunted one story house complete with a dangerous basement and garage. Look out for the Fortune Teller and Summoning Circle spawn zones.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> Small</span>
+                    <span><strong>Rooms:</strong> 10</span>
+                    <span><strong>Floors:</strong> 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-Bodega.jpg" alt="Bodega" class="map-img">
+                <span class="danger-level level-mid">Medium Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>The Bodega</h3>
+                <p class="map-desc">An abandoned corner convenience store. Narrow commercial aisles and a tight stockroom create claustrophobic chase sequences during hunts.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> Small</span>
+                    <span><strong>Rooms:</strong> 9</span>
+                    <span><strong>Floors:</strong> 2</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <h3 class="tier-heading">Commercial Sectors (Medium Sites)</h3>
+    <div class="maps-grid">
+
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-Lilim-Lane.jpg" alt="Lilim Lane" class="map-img">
+                <span class="danger-level level-high">High Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>Lilim Lane</h3>
+                <p class="map-desc">Tradition 2 story Filipino aesthetic unlocked at level 5, featuring intricate woodwork and traditional lighting.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> Medium</span>
+                    <span><strong>Rooms:</strong> 16</span>
+                    <span><strong>Floors:</strong> 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-Cafe.jpg" alt="Cafe" class="map-img">
+                <span class="danger-level level-high">High Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>Cafe</h3>
+                <p class="map-desc">A bustling local cafe with multiple rooms and hidden corners unlocked at level 8. The cafe's kitchen and storage areas are particularly dangerous during hunts.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> Medium</span>
+                    <span><strong>Rooms:</strong> 16</span>
+                    <span><strong>Floors:</strong> 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-Bridgewood.jpg" alt="Bridgewood Drive" class="map-img">
+                <span class="danger-level level-high">High Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>Bridgewood Drive</h3>
+                <p class="map-desc">A high-end modern office interior design block. Multiple glass partitions make hiding difficult as entities maintain line-of-sight easily.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> Medium</span>
+                    <span><strong>Rooms:</strong> 17</span>
+                    <span><strong>Floors:</strong> 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-OakbridgeEstates.jpg" alt="Oakbridge Estates" class="map-img">
+                <span class="danger-level level-high">High Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>Oakbridge Estates</h3>
+                <p class="map-desc">A luxurious residential neighbourhood with multiple houses and intricate architecture. The expansive layout provides numerous hiding spots but also increases the risk of detection.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> Medium</span>
+                    <span><strong>Rooms:</strong> 25</span>
+                    <span><strong>Floors:</strong> n/a</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <h3 class="tier-heading">Institutional Facilities (Large Sites)</h3>
+    <div class="maps-grid">
+       
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-School.jpg" alt="School" class="map-img">
+                <span class="danger-level level-high">High Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>The School</h3>
+                <p class="map-desc">Massive 29 room institutional compound featuring a cafeteria, and long open corridors. Requires level 13 and a full squad to secure.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> Large</span>
+                    <span><strong>Rooms:</strong> 29</span>
+                    <span><strong>Floors:</strong> 2</span>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-Prison.jpg" alt="Prison" class="map-img">
+                <span class="danger-level level-max">High(?) risk</span>
+            </div>
+            <div class="map-details">
+                <h3>Prison</h3>
+                <p class="map-desc">The community's second most feared map. Multi layered abandoned cells filled with alive inmate npcs, featuring a second floor with long corridors where the ghost wails up and down during hunts. Stay out of clear sight.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> XXL Large</span>
+                    <span><strong>Rooms:</strong> 46</span>
+                    <span><strong>Floors:</strong> 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-image-frame">
+                <img src="Map-Asylum.jpg" alt="Asylum" class="map-img">
+                <span class="danger-level level-max">Extreme Risk</span>
+            </div>
+            <div class="map-details">
+                <h3>Bedlam Asylum</h3>
+                <p class="map-desc">The community's most feared map. Multi-layered padded cells, broken corridors, and a labyrinth style basement setup where ghosts track sound footprints.</p>
+                <div class="map-meta">
+                    <span><strong>Size:</strong> XL Large</span>
+                    <span><strong>Rooms:</strong> 38</span>
+                    <span><strong>Floors:</strong> 2</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
   </div>
-  <div class="columnM" style="background-color:rgb(187, 162, 118);">
-    <h8>Content List</h8>
+
+</div> 
+
+
+<footer class="mini-footer">
+    <p>&copy; 2026 Demonology Hunt Archives.</p>
+    <div class="footer-links">
         <h3><a href="Home.html" class="subpages"> Home Page </a></h3>
         <h4><a href="Ghost.Info.html" class="subpages"> Ghost Info </a></h4>
         <h5><a href="Maps.html" class="subpages meow"> Maps Rundown </a></h5>
         <h6><a href="Modifiers.html" class="subpages"> Modifiers Rundown </a></h6>
         <h7><a href="Evidences.html" class="subpages"> Ghost Evidences </a></h7>
         </div>
-</div>
 
 
-</body>
-</html>
+

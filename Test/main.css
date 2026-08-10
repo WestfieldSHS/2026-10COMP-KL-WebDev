@@ -56,7 +56,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    content: url("DemonologyWatcherIcon.jpg");
+    content: url("Image/DemonologyWatcherIcon.jpg");
 }
 
 .content {
@@ -105,19 +105,6 @@ h8 {
  font-size: 39px;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  text-align: center;
-  padding: 100px;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%; 
-}
-
 .containerTab {
   margin: 55px;
   padding: 20px;
@@ -149,10 +136,6 @@ h8 {
   text-align: center;
 }
 
-.left {
-  width: 78%;
-}
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -160,6 +143,464 @@ h8 {
   clear: both;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 100px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+
 .ghostImage {
   border: 10px solid rgb(109, 89, 62);
+}
+
+
+
+
+
+.maps-theme-bg {
+    background-color: rgb(175, 150, 105) !important;
+}
+
+
+.tier-heading {
+    font-family: "Special Elite", monospace;
+    font-size: 32px !important;
+    color: #262118;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border-bottom: 3px double rgb(109, 89, 62);
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.maps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+
+.map-card {
+    background-color: #1e1b15;
+    border: 3px solid rgb(87, 69, 47);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, border-color 0.2s;
+}
+
+
+.map-card:hover {
+    transform: translateY(-4px);
+    border-color: rgb(104, 1, 1);
+}
+
+
+.map-image-frame {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    background-color: #000;
+    overflow: hidden;
+    border-bottom: 3px solid rgb(87, 69, 47);
+}
+
+
+.map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+    filter: grayscale(20%) sepia(15%);
+    transition: all 0.3s ease;
+}
+
+
+.map-card:hover .map-img {
+    opacity: 1;
+    filter: none;
+    transform: scale(1.02);
+}
+
+
+.danger-level {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px 12px;
+    font-family: "Special Elite", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+
+.level-low { background-color: #2e7d32; box-shadow: 0 0 8px rgba(46,125,50,0.6); }
+.level-mid { background-color: #c67100; box-shadow: 0 0 8px rgba(198,113,0,0.6); }
+.level-high { background-color: #8b0000; box-shadow: 0 0 8px rgba(139,0,0,0.6); }
+.level-max { background-color: #ff0000; animation: hazardPulse 1.4s infinite; }
+
+
+@keyframes hazardPulse {
+    0% { opacity: 0.8; box-shadow: 0 0 2px #ff0000; }
+    50% { opacity: 1; box-shadow: 0 0 14px #ff0000; }
+    100% { opacity: 0.8; box-shadow: 0 0 2px #ff0000; }
+}
+
+
+.map-details {
+    padding: 22px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.map-details h3 {
+    font-family: "Sancreek", serif;
+    font-size: 30px;
+    color: rgb(196, 172, 127);
+    margin-bottom: 10px;
+}
+
+
+.map-desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #dcd6be;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+
+.map-meta {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed rgba(196, 172, 127, 0.2);
+    padding-top: 12px;
+    font-family: "Special Elite", monospace;
+    font-size: 13px;
+    color: rgb(196, 172, 127);
+}
+
+
+.mini-footer {
+    width: 100%;
+    background-color: #221d16;
+    border-top: 3px solid rgb(109, 89, 62);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    clear: both;
+}
+
+
+.mini-footer p {
+    font-family: "Special Elite", monospace;
+    font-size: 13px;
+    color: rgb(226, 200, 150);
+}
+
+.footer-links a {
+    font-family: "Caveat Brush", cursive;
+    font-size: 18px;
+    color: rgb(196, 172, 127);
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+
+.map-inner-img, .map-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: #111;
+}
+/* Data summary tracking bars at base footer levels */
+.mod-footer-spec {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed rgba(196, 172, 127, 0.2);
+    padding-top: 12px;
+    font-family: "Special Elite", monospace;
+    font-size: 12px;
+    color: rgb(196, 172, 127) !important;
+}
+
+/* Outer clipboard background framing */
+.clipboard-container {
+    background-color: #1e1a14 !important; /* Matte dark wood backing */
+    border: 4px solid rgb(87, 69, 47);
+    border-radius: 4px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    box-sizing: border-box;
+}
+
+
+/* Internal Section Title Overrides */
+.evidence-section-title {
+    font-family: "Sancreek", serif !important;
+    font-size: 26px !important;
+    color: rgb(196, 172, 127) !important;
+    text-align: left !important;
+    margin-bottom: 15px;
+    border-bottom: 2px dashed rgba(196, 172, 127, 0.3);
+    padding-bottom: 5px;
+}
+
+
+/* Stacks evidence entries cleanly row-by-row */
+.evidence-list-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* Individual list row block settings */
+.evidence-row-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(109, 89, 62, 0.2);
+    gap: 20px;
+    flex-wrap: wrap; /* Allows text strings to drop cleanly on small laptop formats */
+}
+
+
+.evidence-row-item:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+
+/* Layout container styling for checkboxes and text */
+.check-box-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Special Elite", monospace;
+    font-size: 20px;
+    color: rgb(196, 172, 127);
+    user-select: none;
+    gap: 12px;
+}
+
+
+/* Hides default native plain system checkbox buttons */
+.check-box-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* The custom horror-themed box square frame */
+.custom-box {
+    height: 22px;
+    width: 22px;
+    background-color: #2b241c;
+    border: 2px solid rgb(109, 89, 62);
+    border-radius: 3px;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+
+/* Interactive hover highlights on boxes */
+.check-box-wrapper:hover input ~ .custom-box {
+    border-color: #8b0000;
+}
+
+
+/* Changes box fill when checked */
+.check-box-wrapper input:checked ~ .custom-box {
+    background-color: #8b0000;
+    border-color: #ff3333;
+}
+
+
+/* Draws a bloody cross mark inside the checked box squares */
+.custom-box:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 11px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+/* Displays cross marks on activation clicks */
+.check-box-wrapper input:checked ~ .custom-box:after {
+    display: block;
+}
+
+
+/* Strikes out the text line completely if a player rules out that clue */
+.check-box-wrapper input:checked ~ .evidence-name {
+    text-decoration: line-through;
+    color: #888276;
+    text-shadow: none;
+}
+
+
+/* Right-side descriptive paragraphs details */
+.evidence-brief-desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px !important;
+    line-height: 1.4;
+    color: #bfae93 !important;
+    max-width: 500px;
+    text-align: left !important;
+    margin: 0;
+}
+
+    .modifiers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+
+/* Individual modifier details dossier container */
+.modifier-card {
+    background-color: #1a1612 !important; /* Gritty parchment shadow background tone */
+    border: 3px solid rgb(87, 69, 47);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+    transition: transform 0.2s ease, border-color 0.2s;
+}
+
+
+.modifier-card:hover {
+    transform: translateY(-3px);
+    border-color: #8b0000; /* Shifts to warning red on interactive hover state */
+}
+
+
+/* Forces interior text tags to match left dossier alignments explicitly */
+.modifier-card * {
+    text-align: left !important;
+}
+
+
+/* Top header strip wrapper housing titles and dynamic metrics */
+.mod-header-strip {
+    background-color: #262019;
+    padding: 15px 20px;
+    border-bottom: 2px solid rgb(109, 89, 62);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.mod-header-strip h3 {
+    font-family: "Sancreek", serif !important;
+    font-size: 24px !important;
+    color: rgb(196, 172, 127) !important;
+    margin: 0 !important;
+}
+
+.mult-badge {
+    font-family: "Special Elite", monospace;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px #000;
+    flex-shrink: 0;
+}
+
+
+.bonus-mid { 
+  background-color: #c67100; 
+}
+
+.bonus-high { 
+  background-color: #8b0000; 
+}
+
+.bonus-max { 
+  background-color: #ff0000; animation: hazardPulse 1.4s infinite; 
+}
+
+.mod-details-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.mod-details-box p {
+    font-family: "Special Elite", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ded9cb !important;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.mod-footer-spec {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed rgba(196, 172, 127, 0.2);
+    padding-top: 12px;
+    font-family: "Special Elite", monospace;
+    font-size: 12px;
+    color: rgb(196, 172, 127) !important;
 }

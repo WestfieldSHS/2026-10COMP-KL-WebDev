@@ -8,34 +8,15 @@
   box-sizing: border-box;
 }
 
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  width: 22%;
-  padding: 10px;
-  height: 950px; /* Should be removed. Only for demonstration */
-}
-
-.left {
-  width: 78%;
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 </style>
 </head>
 <body>
 
 <div class="row">
-  <div class="column left" style="background-color:rgb(196, 172, 127);">
+  <div class="LeftSide" style="background-color:rgb(196, 172, 127);">
     <body>
     <h1>Demonology Hunt!</h1>
-    <img class="loading" src="Demonology-Title.jpg" alt="Demonology Title Picture.">
+    <img class="loading" src="Image/Demonology-Title.jpg" alt="Demonology Title Picture.">
     <h2>Welcome to the Demonology Run-down.</h2>
         <div class="Text-container">
         <p class="default">This is where you will learn all about the game! From learning how to even play the game to breaking down key features of the game.</p>
@@ -43,15 +24,18 @@
         </div>
     </body>
   </div>
-  <div class="columnM" style="background-color:rgb(187, 162, 118);">
-    <h8>Content List</h8>
+
+<footer class="mini-footer">
+    <p>&copy; 2026 Demonology Hunt Archives.</p>
+    <div class="footer-links">
         <h3><a href="Home.html" class="subpages meow"> Home Page </a></h3>
         <h4><a href="Ghost.Info.html" class="subpages"> Ghost Info </a></h4>
         <h5><a href="Maps.html" class="subpages"> Maps Rundown </a></h5>
         <h6><a href="Modifiers.html" class="subpages"> Modifiers Rundown </a></h6>
         <h7><a href="Evidences.html" class="subpages"> Ghost Evidences </a></h7>
         </div>
-</div>
+
+
 
 </body>
 </html>

@@ -1,50 +1,103 @@
-<link href="main.css" rel="stylesheet">
-
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  width: 22%;
-  padding: 10px;
-  height: 950px; /* Should be removed. Only for demonstration */
-}
-
-.left {
-  width: 78%;
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonology - Modifiers Rundown</title>
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
 
+
 <div class="row">
-  <div class="column left" style="background-color:rgb(196, 172, 127);">
-    <p></p>
-    
-  </div>
-  <div class="columnM" style="background-color:rgb(187, 162, 118);">
-    <h8>Content List</h8>
+ 
+  <div class="LeftSide" style="background-color:rgb(196, 172, 127);">
+    <h1>Contract Modifiers</h1>
+    <h2>Adjust the risk parameters. Maximize your match payouts.</h2>
+   
+    <h3 class="tier-heading">Player Limitations</h3>
+    <div class="modifiers-grid">
+       
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Broken Flashlights</h3>
+                <span class="mult-badge bonus-high">+1.5x Cash</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Flashlight batteries degrade and completely drain out after 3 total minutes of runtime. Forces relying on static candle setups or match sticks.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Category:</strong> Survival</span>
+                    <span><strong>Risk:</strong> High</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Expired Medication</h3>
+                <span class="mult-badge bonus-mid">+1.2x XP</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Sanity recovery pills lose their punch. Restores only 15% sanity per dose instead of the standard 40%, forcing speed-running investigation logic.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Category:</strong> Medical</span>
+                    <span><strong>Risk:</strong> Medium</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <h3 class="tier-heading">Entity Buffs</h3>
+    <div class="modifiers-grid">
+       
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Hyper-Activity</h3>
+                <span class="mult-badge bonus-max">+2.0x Reward</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Increases baseline ghost roaming interactions and hunting velocity by an additional 15%. Breaks traditional loop strategies completely.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Category:</strong> Speed</span>
+                    <span><strong>Risk:</strong> Extreme</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Aggressive Resonance</h3>
+                <span class="mult-badge bonus-high">+1.4x Cash</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Cuts the down-time rest window between ghost hunts down to a tiny 20-second grace period. Entangling ghosts becomes highly lethal.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Category:</strong> Hunting</span>
+                    <span><strong>Risk:</strong> High</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+<footer class="mini-footer">
+    <p>&copy; 2026 Demonology Hunt Archives.</p>
+    <div class="footer-links">
         <h3><a href="Home.html" class="subpages"> Home Page </a></h3>
         <h4><a href="Ghost.Info.html" class="subpages"> Ghost Info </a></h4>
         <h5><a href="Maps.html" class="subpages"> Maps Rundown </a></h5>
         <h6><a href="Modifiers.html" class="subpages meow"> Modifiers Rundown </a></h6>
         <h7><a href="Evidences.html" class="subpages"> Ghost Evidences </a></h7>
         </div>
-</div>
 
+
+  </div>
 </body>
 </html>
+
+
