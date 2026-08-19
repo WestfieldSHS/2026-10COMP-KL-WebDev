@@ -1,45 +1,119 @@
-<html>
+<!DOCTYPE html>
+<mo>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demonology - Modifiers Rundown</title>
     <link href="main.css" rel="stylesheet">
 </head>
-<body>
+<q>
 
 
-<div class="row">
+<nav class="menu-bar">
+    <div class="nav-logo">DEMONOLOGY HUNT</div>
+    <ul class="nav-links">
+        <li><a href="Home.html"> Home page</a></li>
+        <li><a href="Ghost.Info.html"> Ghost Info</a></li>
+        <li><a href="Maps.html"> Maps</a></li>
+        <li><a href="Modifiers.html" class="active"> Modifiers</a></li>
+        <li><a href="Evidences.html"> Evidence</a></li>
+    </ul>
+</nav>
+
+
+<div class="rowest">
  
-  <div class="LeftSide" style="background-color:rgb(196, 172, 127);">
+  <div class="left" style="background-color:rgb(196, 172, 127);">
     <h1>Contract Modifiers</h1>
     <h2>Adjust the risk parameters. Maximize your match payouts.</h2>
    
-    <h3 class="tier-heading">Player Limitations</h3>
+    <h3 class="tier-heading"> Player Settings</h3>
     <div class="modifiers-grid">
        
         <div class="modifier-card">
             <div class="mod-header-strip">
-                <h3>Broken Flashlights</h3>
-                <span class="mult-badge bonus-high">+1.5x Cash</span>
+                <h3>Starting Energy</h3>
+                <span class="mult-badge bonus-mid">0% - 100%</span>
             </div>
             <div class="mod-details-box">
-                <p>Flashlight batteries degrade and completely drain out after 3 total minutes of runtime. Forces relying on static candle setups or match sticks.</p>
+                <p>Controls how much stamina/sanity you begin the match with.</p>
                 <div class="mod-footer-spec">
-                    <span><strong>Category:</strong> Survival</span>
+                    <span><strong>Type:</strong> Range Slider</span>
+                    <span><strong>Risk:</strong> Variable</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Energy Drink Restore</h3>
+                <span class="mult-badge bonus-low">Modifier</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Adjusts the energy percentage gained back from consuming energy items.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Adjustment</span>
+                    <span><strong>Risk:</strong> low</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Energy Drain Rate</h3>
+                <span class="mult-badge bonus-mid">Multiplier</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Multiplies how quickly your stamina decreases over time.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Multiplier</span>
+                    <span><strong>Risk:</strong> Medium</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Player Walk Speed</h3>
+                <span class="mult-badge bonus-low">Speed</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Determines your movement speed across the contract map.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Speed Control</span>
+                    <span><strong>Risk:</strong> Variable</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Flashlight Broken</h3>
+                <span class="mult-badge bonus-high">Toggle</span>
+            </div>
+            <div class="mod-details-box">
+                <p>A toggle that makes your flashlight experience malfunctions or completely stop working.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Binary Switch</span>
                     <span><strong>Risk:</strong> High</span>
                 </div>
             </div>
         </div>
 
+
         <div class="modifier-card">
             <div class="mod-header-strip">
-                <h3>Expired Medication</h3>
-                <span class="mult-badge bonus-mid">+1.2x XP</span>
+                <h3>Max Stamina</h3>
+                <span class="mult-badge bonus-mid">Cap Limit</span>
             </div>
             <div class="mod-details-box">
-                <p>Sanity recovery pills lose their punch. Restores only 15% sanity per dose instead of the standard 40%, forcing speed-running investigation logic.</p>
+                <p>Caps your overall running and survival capacity during encounters.</p>
                 <div class="mod-footer-spec">
-                    <span><strong>Category:</strong> Medical</span>
+                    <span><strong>Type:</strong> Threshold Cap</span>
                     <span><strong>Risk:</strong> Medium</span>
                 </div>
             </div>
@@ -48,33 +122,222 @@
 
     </div>
 
-    <h3 class="tier-heading">Entity Buffs</h3>
+    <h3 class="tier-heading">Ghost & Hunt Settings</h3>
     <div class="modifiers-grid">
-       
+
+
         <div class="modifier-card">
             <div class="mod-header-strip">
-                <h3>Hyper-Activity</h3>
-                <span class="mult-badge bonus-max">+2.0x Reward</span>
+                <h3>Can Ghosts Hunt</h3>
+                <span class="mult-badge bonus-max">Master Toggle</span>
             </div>
             <div class="mod-details-box">
-                <p>Increases baseline ghost roaming interactions and hunting velocity by an additional 15%. Breaks traditional loop strategies completely.</p>
+                <p>A master toggle enabling or disabling entity hunting phases entirely.</p>
                 <div class="mod-footer-spec">
-                    <span><strong>Category:</strong> Speed</span>
+                    <span><strong>Type:</strong> Core Switch</span>
                     <span><strong>Risk:</strong> Extreme</span>
                 </div>
             </div>
         </div>
 
+
         <div class="modifier-card">
             <div class="mod-header-strip">
-                <h3>Aggressive Resonance</h3>
-                <span class="mult-badge bonus-high">+1.4x Cash</span>
+                <h3>Hunt Duration</h3>
+                <span class="mult-badge bonus-high">Time Limit</span>
             </div>
             <div class="mod-details-box">
-                <p>Cuts the down-time rest window between ghost hunts down to a tiny 20-second grace period. Entangling ghosts becomes highly lethal.</p>
+                <p>Dictates how long a single hunting phase lasts (e.g., 60 seconds).</p>
                 <div class="mod-footer-spec">
-                    <span><strong>Category:</strong> Hunting</span>
+                    <span><strong>Type:</strong> Duration Slider</span>
                     <span><strong>Risk:</strong> High</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Hunt Energy</h3>
+                <span class="mult-badge bonus-low">Penalty</span>
+            </div>
+            <div class="mod-details-box">
+                <p>The minimum threshold or drain penalty applied during active hunts.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Drain Modifier</span>
+                    <span><strong>Risk:</strong> low</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Hunt Cooldown</h3>
+                <span class="mult-badge bonus-high">Min 10s</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Sets the mandatory down-time between consecutive hunts (can be lowered to 10 seconds for max difficulty).</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Cooldown Timer</span>
+                    <span><strong>Risk:</strong> High</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Grace Period</h3>
+                <span class="mult-badge bonus-max">Min 0s</span>
+            </div>
+            <div class="mod-details-box">
+                <p>The time between the initial hunt audio/scream and when the ghost physically manifests to kill (can be set to 0 seconds).</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Buffer Timer</span>
+                    <span><strong>Risk:</strong> Extreme</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Hunt Probability</h3>
+                <span class="mult-badge bonus-mid">Chance %</span>
+            </div>
+            <div class="mod-details-box">
+                <p>The percentage likelihood that a random hunt triggers over time.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> RNG Percent</span>
+                    <span><strong>Risk:</strong> Medium</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Ghost Walk Speed</h3>
+                <span class="mult-badge bonus-max">Up to 200%</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Modifies the speed of the entity, adjustable up to a rapid 200% movement velocity.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Speed Slider</span>
+                    <span><strong>Risk:</strong> High</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Kill at Hunt Time</h3>
+                <span class="mult-badge bonus-max">Instant</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Determines how quickly an entity can secure a kill during a phase.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Time Threshold</span>
+                    <span><strong>Risk:</strong> Extreme</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Can Ghost Change Room</h3>
+                <span class="mult-badge bonus-low">Toggle</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Toggles whether the entity is locked to its favorite room or free to roam across the map.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> AI Roaming</span>
+                    <span><strong>Risk:</strong> low</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Interaction Rates</h3>
+                <span class="mult-badge bonus-mid">Multi-Slider</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Individual sliders that control how frequently the ghost throws items (Action), causes jump scares (Interaction), and triggers events (Aggression).</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Activity Sliders</span>
+                    <span><strong>Risk:</strong> Medium</span>
+                </div>
+            </div>
+        </div>
+
+
+  </div>
+
+
+    <h3 class="tier-heading"> Evidence & Match Investigation</h3>
+    <div class="modifiers-grid">
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Evidence Given</h3>
+                <span class="mult-badge bonus-max">3 down to 0</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Sets the number of evidence points the ghost leaves behind (3 for standard play down to 0 for the 4.07x challenge).</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Integer Count</span>
+                    <span><strong>Risk:</strong> Extreme</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Setup Duration</h3>
+                <span class="mult-badge bonus-low">Timer</span>
+            </div>
+            <div class="mod-details-box">
+                <p>The initial "grace time" given at the start of a match before the ghost is allowed to interact or hunt.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Safety Timer</span>
+                    <span><strong>Risk:</strong> Low</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Trace Duration</h3>
+                <span class="mult-badge bonus-mid">Up to 60s</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Dictates how long standard physical traces (Handprints/Fingerprints) remain visible on doors and surfaces before fading.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Fade Timer</span>
+                    <span><strong>Risk:</strong> Medium</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Monitor Broken</h3>
+                <span class="mult-badge bonus-low">Toggle</span>
+            </div>
+            <div class="mod-details-box">
+                <p>A toggle option to corrupt or disable the data monitors located inside the base camp van.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> UI Blindness</span>
+                    <span><strong>Risk:</strong> low</span>
                 </div>
             </div>
         </div>
@@ -83,21 +346,70 @@
     </div>
 
 
+    <h3 class="tier-heading"> Map Settings</h3>
+    <div class="modifiers-grid">
 
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Cursed Possession</h3>
+                <span class="mult-badge bonus-low">Toggle</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Enables or disables the spawning of special items like the Music Box.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Item Spawner</span>
+                    <span><strong>Risk:</strong> Variable</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Doors Open</h3>
+                <span class="mult-badge bonus-mid">Percentage</span>
+            </div>
+            <div class="mod-details-box">
+                <p>Configures the percentage of map doors that start fully open versus shut, modifying line-of-sight blocks.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Map RNG State</span>
+                    <span><strong>Risk:</strong> Medium</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modifier-card">
+            <div class="mod-header-strip">
+                <h3>Fuse Box Starts On</h3>
+                <span class="mult-badge bonus-high">Toggle</span>
+            </div>
+            <div class="mod-details-box">
+                <p>A toggle controlling whether the building power grid is active at spawn or requires finding the breaker room in total darkness.</p>
+                <div class="mod-footer-spec">
+                    <span><strong>Type:</strong> Power Switch</span>
+                    <span><strong>Risk:</strong> High</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+  </div>
 
     <footer class="mini-footer">
         <p>&copy; 2026 Demonology Hunt Archives.</p>
         <div class="footer-links">
-            <a href="Home.html">Home</a>
-            <a href="Ghost.Info.html">Ghost Info</a>
-            <a href="Maps.html">Maps</a>
-            <a href="Modifiers.html">Modifiers</a>
-            <a href="Evidences.html">Evidences</a>
+            <a href="Home.html"> Home page</a>
+            <a href="Ghost.Info.html"> Ghost Info</a>
+            <a href="Maps.html"> Maps</a>
+            <a href="Modifiers.html"> Modifiers</a>
+            <a href="Evidences.html"> Evidences</a>
         </div>
     </footer>
 
-  </div>
-</body>
-</html>
-
-
+    </div>
+</q>
+</mo>
