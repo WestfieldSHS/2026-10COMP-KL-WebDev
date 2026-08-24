@@ -31,21 +31,10 @@
 
 .loading {
     width: auto;
-    padding: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-.loading:hover {
-    width: auto;
-    padding: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    content: url("Image/DemonologyWatcherIcon.jpg");
 }
 
 .content {
@@ -61,37 +50,6 @@
   text-decoration: none;
   color: rgba(43, 41, 41, 0);
 
-}
-
-h8 {
-  font-size: 35px;
-  font-style: italic;
-  text-decoration: underline;
-  font-family: "Climate Crisis";
-  color: rgb(90, 75, 55);
-
-}
-
-.meow {
-  background-color: rgb(170, 145, 99);
-  font-size: 25px;
-  font-family: "Shadows Into Light Two";
-  font-style: italic;
-  color: rgb(87, 69, 47);
-}
-
-.subpages {
-  font-size: 33px;
-  padding: 5px;
-  text-align: center;
-  font-family: "Caveat Brush";
-  text-decoration:wavy;
-  font-weight: bold;
-  color: rgb(109, 89, 62);
-}
-
-.subpages:hover {
- font-size: 39px;
 }
 
 .ghostImage {
@@ -285,14 +243,11 @@ h8 {
     padding-bottom: 5px;
 }
 
-
-/* Stacks evidence entries cleanly row-by-row */
 .evidence-list-table {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
 
 /* Individual list row block settings */
 .evidence-row-item {
@@ -311,7 +266,6 @@ h8 {
 }
 
 
-/* Layout container styling for checkboxes and text */
 .check-box-wrapper {
     display: flex;
     align-items: center;
@@ -333,8 +287,6 @@ h8 {
     width: 0;
 }
 
-
-/* The custom horror-themed box square frame */
 .custom-box {
     height: 22px;
     width: 22px;
@@ -346,8 +298,6 @@ h8 {
     transition: background-color 0.2s, border-color 0.2s;
 }
 
-
-/* Interactive hover highlights on boxes */
 .check-box-wrapper:hover input ~ .custom-box {
     border-color: #8b0000;
 }
@@ -392,9 +342,9 @@ h8 {
 /* Right-side descriptive paragraphs details */
 .evidence-brief-desc {
     font-family: "Special Elite", sans-serif;
-    font-size: 15px !important;
+    font-size: 15px;
     line-height: 1.4;
-    color: #bfae93 !important;
+    color: #bfae93;
     max-width: 500px;
     text-align: left !important;
     margin: 0;
@@ -480,7 +430,7 @@ mo, q {
 
 
 .modifier-card {
-    background-color: #1a1612 !important; 
+    background-color: #1a1612; 
     border: 3px solid rgb(87, 69, 47);
     border-radius: 4px;
     display: flex;
@@ -514,9 +464,9 @@ mo, q {
 
 
 .mod-header-strip h3 {
-    font-family: "Sancreek", serif !important;
-    font-size: 24px !important;
-    color: rgb(196, 172, 127) !important;
+    font-family: "Sancreek", serif;
+    font-size: 24px;
+    color: rgb(196, 172, 127);
     margin: 0 !important;
 }
 
@@ -527,7 +477,7 @@ mo, q {
     font-weight: bold;
     padding: 4px 8px;
     border-radius: 3px;
-    color: #ffffff !important;
+    color: #ffffff;
     text-shadow: 1px 1px 2px #000;
     flex-shrink: 0;
 }
@@ -567,7 +517,7 @@ mo, q {
     font-family: "Edu TAS Beginner", "serif";
     font-size: 19px;
     line-height: 1.5;
-    color: #ded9cb !important;
+    color: #ded9cb;
     margin-bottom: 20px;
     flex-grow: 1;
 }
@@ -581,7 +531,7 @@ mo, q {
     padding-top: 12px;
     font-family: "Special Elite", monospace;
     font-size: 12px;
-    color: rgb(196, 172, 127) !important;
+    color: rgb(196, 172, 127);
 }
 
 
@@ -600,7 +550,7 @@ mo, q {
     padding-right: 40px;
     padding-bottom: 40px;
 }
-EvidRow {
+.EvidRow {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -632,7 +582,6 @@ EvidRow {
 }
 
 
-/* Header Text Blocks */
 h1 {
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -679,7 +628,7 @@ h2 {
 
 
 .ghost-card-btn:hover {
-    background-color: #8b2626; /* Deep crimson on hover */
+    background-color: #8b2626; 
     color: #ffffff;
     border-color: #4a1212;
     transform: translateY(-2px);
@@ -688,7 +637,7 @@ h2 {
 
 /* Expanded Info Display Drawer Box */
 .containerTab {
-    display: none; /* Controlled by JavaScript */
+    display: none; 
     background-color: #e6dfcf;
     border: 2px solid #3e3523;
     border-radius: 4px;
@@ -710,7 +659,6 @@ h2 {
 }
 
 
-/* Core lore text spacing */
 .ghost-lore {
     font-size: 18px;
     line-height: 1.5;
@@ -718,8 +666,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-
-/* Vital trait highlighting */
 .ghost-trait {
     font-size: 16px;
     background-color: rgba(139, 38, 38, 0.1);
@@ -729,8 +675,6 @@ h2 {
     line-height: 1.4;
 }
 
-
-/* Close Window Button Graphic */
 .closebtn {
     position: absolute;
     top: 10px;
@@ -807,7 +751,7 @@ main, second {
     padding: 0 !important;
     width: 100%;
     overflow-x: hidden;
-    background-color: rgb(196, 172, 127); /* Unifies background margins */
+    background-color: rgb(196, 172, 127);
 }
 
 
@@ -889,7 +833,7 @@ second {
 .columnM {
     flex: 30%;
     min-width: 250px;
-    padding-top: 90px !important;
+    padding-top: 90px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 40px;
@@ -898,8 +842,8 @@ second {
 
 .column.left h1 {
     font-family: "Sancreek", serif !important;
-    font-size: 48px !important;
-    color: #1a1a1a !important;
+    font-size: 48px;
+    color: #1a1a1a;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -907,8 +851,8 @@ second {
 
 .column.left h2 {
     font-family: "Caveat Brush", cursive !important;
-    font-size: 28px !important;
-    color: #2b251d !important;
+    font-size: 28px;
+    color: #2b251d;
     margin-top: 0;
     margin-bottom: 25px;
 }
@@ -934,14 +878,15 @@ second {
 
 .text-container p, .text-container span.hover {
     font-family: "Special Elite", sans-serif;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 1.6;
     color: #1a1a1a;
 }
 
 
 .status-banner {
-    background-color: #1a1612;     border: 3px solid rgb(109, 89, 62);
+    background-color: #1a1612;     
+    border: 3px solid rgb(109, 89, 62);
     padding: 5px 20px;
     margin-bottom: 25px;
     border-radius: 4px;
@@ -953,10 +898,10 @@ second {
 
 
 .status-banner p {
-    font-family: "Special Elite", monospace !important;
-    font-size: 14px !important;
-    color: rgb(196, 172, 127) !important;
-    margin: 12px 0 !important;
+    font-family: "Special Elite", monospace;
+    font-size: 14px;
+    color: rgb(196, 172, 127);
+    margin: 12px 0;
 }
 
 
@@ -976,17 +921,15 @@ second {
     margin-top: 50px;
     padding-top: 25px;
     font-family: "Sancreek", serif;
-    font-size: 40px !important;
-    color: #1a1a1a !important;
+    font-size: 40px;
+    color: #1a1a1a;
 }
 
 
 .image-wrapper img {
     max-width: 100%;
     height: auto;
-    border: 3px solid rgb(87, 69, 47);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    border-radius: 4px;
+    border-radius: 3px;
     margin-bottom: 25px;
 }
 
@@ -1001,7 +944,7 @@ second {
 
 
 .step-card {
-    background-color: #1a1612 !important;
+    background-color: #1a1612;
     border: 3px solid rgb(87, 69, 47);
     border-radius: 4px;
     display: flex;
@@ -1034,9 +977,9 @@ second {
 
 
 .mod-header-strip h3 {
-    font-family: "Sancreek", serif !important;
-    font-size: 22px !important;
-    color: rgb(196, 172, 127) !important;
+    font-family: "Sancreek", serif;
+    font-size: 22px;
+    color: rgb(196, 172, 127);
     margin: 0 !important;
 }
 
@@ -1048,7 +991,7 @@ second {
     padding: 4px 10px;
     border-radius: 3px;
     background-color: #c67100;
-    color: #ffffff !important;
+    color: #ffffff;
     text-shadow: 1px 1px 2px #000;
     flex-shrink: 0;
 }
@@ -1064,10 +1007,10 @@ second {
 
 .step-card p {
     font-family: "Special Elite", sans-serif !important;
-    font-size: 14px !important;
+    font-size: 14px;
     line-height: 1.5 !important;
-    color: #ded9cb !important;
-    margin-bottom: 20px !important;
+    color: #ded9cb;
+    margin-bottom: 20px;
     flex-grow: 1;
 }
 
@@ -1080,7 +1023,7 @@ second {
     padding-top: 12px;
     font-family: "Special Elite", monospace;
     font-size: 12px;
-    color: rgb(196, 172, 127) !important;
+    color: rgb(196, 172, 127);
 }
 
 
