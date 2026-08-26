@@ -782,6 +782,7 @@ second {
     color: rgb(196, 172, 127);
     font-size: 24px;
     letter-spacing: 2px;
+    vertical-align: top;
 }
 
 
