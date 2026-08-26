@@ -811,6 +811,12 @@ second {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
 }
 
+.video {
+width: 100%;
+display: flex;
+
+}
+
 
 .rowing {
     display: flex;
@@ -879,9 +885,10 @@ second {
 
 .text-container p, .text-container span.hover {
     font-family: "Special Elite", sans-serif;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 1.6;
     color: #1a1a1a;
+    padding-top: 4px;
 }
 
 
@@ -924,14 +931,6 @@ second {
     font-family: "Sancreek", serif;
     font-size: 40px;
     color: #1a1a1a;
-}
-
-
-.image-wrapper img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 3px;
-    margin-bottom: 25px;
 }
 
 
